@@ -37,6 +37,7 @@ const Disk = () => {
     files.forEach((file) => dispatch(uploadFile(file, currentDir)));
   }
 
+  // drag  -- отвечает за то чтобы мы могли загружать файлы при помощи перетаскивание
   function dragEnterHandler(event) {
     event.preventDefault();
     event.stopPropagation();
